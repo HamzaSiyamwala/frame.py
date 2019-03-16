@@ -1,0 +1,15 @@
+import tkinter as tk
+root = tk.Tk()
+label=tk.Label(root)
+logo = tk.PhotoImage(file="python.gif")
+w = tk.Label(root,justify=tk.LEFT,compound=tk.RIGHT,image=logo).pack(side="top")
+def slogan():
+    print("This is an example of frames")
+    print("this is how tkinter works")
+frame = tk.Frame(root)
+frame.pack()
+button1 = tk.Button(root,text = "quit",command = quit)
+button1.pack(side = tk.LEFT)
+slogan = tk.Button(root,text="hello",fg="red",command=slogan)
+slogan.pack(side = tk.RIGHT)
+root.mainloop()
